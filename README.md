@@ -1,7 +1,9 @@
 # emtasks
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## About the project
+The Web Application, todoTracker was designed to ease the idea of task management and planning.
+<img width="1405" alt="Screen Shot 2021-07-27 at 10 41 40 AM" src="https://user-images.githubusercontent.com/63629262/127203920-7ac325de-5a07-4a51-b43e-bcae78a14e71.png">
+
 
 ## Prerequisites
 
