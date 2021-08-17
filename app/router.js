@@ -11,4 +11,5 @@ Router.map(function () {
     this.route('new');
   });
   this.route('newTask');
+  this.route('tasksList');
 });

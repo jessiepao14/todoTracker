@@ -68,6 +68,17 @@ define("emtasks/tests/unit/routes/new-task-test", ["qunit", "ember-qunit"], func
     });
   });
 });
+define("emtasks/tests/unit/routes/tasks-list-test", ["qunit", "ember-qunit"], function (_qunit, _emberQunit) {
+  "use strict";
+
+  (0, _qunit.module)('Unit | Route | tasksList', function (hooks) {
+    (0, _emberQunit.setupTest)(hooks);
+    (0, _qunit.test)('it exists', function (assert) {
+      let route = this.owner.lookup('route:tasks-list');
+      assert.ok(route);
+    });
+  });
+});
 define("emtasks/tests/unit/routes/tasks-test", ["qunit", "ember-qunit"], function (_qunit, _emberQunit) {
   "use strict";
 

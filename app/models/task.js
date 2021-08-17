@@ -7,11 +7,4 @@ export default class TaskModel extends Model {
   @attr('string') title;
   @attr('string') description;
   @attr('date') date;
-  //   @attr('string', {
-  //     @action
-  //     defaultValue() {
-  //       return new Date();
-  //     },
-  //   })
-  //   created;
 }

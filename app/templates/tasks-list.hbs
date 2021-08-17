@@ -1,0 +1,43 @@
+{{page-title "TasksList"}}
+{{outlet}}
+<h1>List of Tasks</h1>
+
+<h2>Tasks Coming up</h2>
+{{#each model as |task|}}
+    {{#if task.date < current.date}}
+        <div class="alert alert-success" role="alert">
+            <h4>{{task.title}}</h4>
+            <small>Due: {{task.date}}</small>
+            <p>{{task.descriptive}}</p>
+        </div>
+{{/each}}
+
+<h2>Tasks Due Today</h2>
+{{#each model as |task|}}
+    {{#if task.date === current.date}}
+        <div class="alert alert-success" role="alert">
+            <h4>{{task.title}}</h4>
+            <small>Due: {{task.date}}</small>
+            <p>{{task.descriptive}}</p>
+        </div>
+{{/each}}
+
+<h2>Tasks Overdue</h2>
+{{#each model as |task|}}
+    {{#if task.date > current.date}}
+        <div class="alert alert-danger" role="alert">
+            <h4>{{task.title}}</h4>
+            <small>Due: {{task.date}}</small>
+            <p>{{task.descriptive}}</p>
+        </div>
+{{/each}}
+
+<h2>Tasks Completed</h2>
+{{#each model as |task|}}
+    {{#if task.complete === true}}
+        <div class="alert alert-danger" role="alert">
+            <h4>{{task.title}}</h4>
+            <small>Due: {{task.date}}</small>
+            <p>{{task.descriptive}}</p>
+        </div>
+{{/each}}

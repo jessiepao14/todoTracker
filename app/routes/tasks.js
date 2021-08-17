@@ -1,3 +1,10 @@
 import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
 
-export default class TasksRoute extends Route {}
+export default class TasksRoute extends Route {
+    @service store;
+    model() {
+        alert(this.store.findAll('task'))
+        return this.store.findAll('task')
+    }
+}

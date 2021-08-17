@@ -1,3 +1,12 @@
 {{page-title "Tasks"}}
 {{outlet}}
-<h1>Tasks</h1>
+<h1>New Tasks Added Today</h1>
+
+{{#each model as |task|}}
+    {{#if task.date < current.date}}
+        <div class="well">
+            <h4>{{task.title}}</h4>
+            <small>Due: {{task.date}}</small>
+            <p>{{task.descriptive}}</p>
+        </div>
+{{/each}}

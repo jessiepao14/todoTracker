@@ -15,19 +15,18 @@ export default class TasksNewController extends Controller {
       description: description,
       date: new Date(date),
     });
-
-    alert(newTask);
-
     //Save to Database
-    newTask.save();
+    
+    newTask.save().then(response => {
+      alert("Thank you your item was added")
+    })
 
-    //Clear Form
-    // this.setProperties({
-    //   title: '',
-    //   description: '',
-    //   date: '',
-    // });
-
-    // alert(title);
+    // alert(this.store.findAll('new-task'))
+    // //Clear Form
+    this.setProperties({
+      title: '',
+      description: '',
+      date: '',
+    });
   }
 }
