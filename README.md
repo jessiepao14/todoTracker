@@ -1,11 +1,16 @@
 # emtasks
 
 ## About the project
+
 The Web Application, todoTracker was designed to ease the idea of task management and planning.
 <img width="1405" alt="Screen Shot 2021-07-27 at 10 41 40 AM" src="https://user-images.githubusercontent.com/63629262/127203920-7ac325de-5a07-4a51-b43e-bcae78a14e71.png">
 
 Firebase realtime database
 <img width="1405" alt="Screen Shot 2021-08-16 at 7 56 43 PM" src="https://user-images.githubusercontent.com/63629262/129664462-43784510-6cea-4c28-88fd-754ee8b05db3.png">
+
+Add task
+<img width="1371" alt="Screen Shot 2021-08-16 at 9 23 02 PM" src="https://user-images.githubusercontent.com/63629262/129664967-85c297c4-55e0-46de-bdf3-f529da2e01a9.png">
+
 
 List of tasks in sorted catagories
 <img width="1471" alt="Screen Shot 2021-08-16 at 9 34 56 PM" src="https://user-images.githubusercontent.com/63629262/129664486-3449500f-6f49-4d81-a6d1-f1f31c1e8999.png">
